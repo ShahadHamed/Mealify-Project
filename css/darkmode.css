@@ -1,0 +1,179 @@
+/*Dark&light mode------------------------------------------*/
+
+:root {
+    /* Backgrounds */
+    --bg-primary: #1f1e1e;
+    --bg-secondary: #181818;
+    --bg-box: #222222;
+    /* Text colors */
+    --text-primary: #fff;
+    --text-secondary: #aaa;
+    /* Accent / highlights */
+    --accent-color: orange;
+
+}
+
+/* ================= BODY ================= */
+
+body:has(#darkToggle:checked) {
+    background-color:var(--bg-primary);
+    color: var(--text-primary);
+    transition: 0.4s;
+}
+
+/* ================= NAVBAR ================= */
+
+body:has(#darkToggle:checked) nav {
+    background-color: var(--bg-primary) !important;
+}
+
+body:has(#darkToggle:checked) nav .nav-link {
+    color: var(--text-secondary) !important;
+}
+
+body:has(#darkToggle:checked) .navbar-brand {
+    color: var(--text-primary) !important;
+}
+
+/*dot red to orange*/
+body:has(#darkToggle:checked) .navbar-brand::after {
+    background-color:var(--accent-color);
+}
+
+/*red line to orange*/
+body:has(#darkToggle:checked) .navbar-nav .nav-link::after {
+    background-color: var(--accent-color);
+}
+
+body:has(#darkToggle:checked) .btn .fa-bars {
+    color: var(--text-primary);
+}
+
+/* ================= HOME ================= */
+
+body:has(#darkToggle:checked) .home {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+}
+
+body:has(#darkToggle:checked) .home p {
+    color: var(--text-secondary) !important;
+}
+
+body:has(#darkToggle:checked) .book-button {
+    background-color: var(--accent-color) !important;
+    border-color: var(--accent-color) !important;
+    color: #000 !important;
+}
+
+body:has(#darkToggle:checked) .video-button {
+    color: var(--text-primary) !important;
+}
+
+body:has(#darkToggle:checked) .video-button:hover {
+    color: var(--accent-color) !important;
+}
+
+/* ================= CHEFS ================= */
+
+body:has(#darkToggle:checked) .chefs {
+    background-color: var(--bg-primary);
+}
+
+body:has(#darkToggle:checked) .chefs h5 {
+    color: var(--text-secondary) !important;
+}
+
+body:has(#darkToggle:checked) .chefs h2 span {
+    color: var(--accent-color)!important;
+}
+
+/* Cards */
+body:has(#darkToggle:checked) .chefs .card {
+    background-color: var(--bg-primary) !important;
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+}
+
+body:has(#darkToggle:checked) .chefs .card-body {
+    background-color: var(--bg-primary) !important;
+    color: var(--text-primary);
+}
+
+body:has(#darkToggle:checked) .chefs .card-text {
+    color: var(--text-secondary);
+}
+
+/* ================= GALLERY ================= */
+
+body:has(#darkToggle:checked) .gallery-section {
+    background-color: var(--bg-secondary);
+}
+
+body:has(#darkToggle:checked) .gallery-section h5 {
+    color: var(--text-secondary);
+}
+
+body:has(#darkToggle:checked) .gallery-section .text-danger {
+    color: var(--accent-color) !important;
+}
+
+/* ================= CONTACT ================= */
+
+body:has(#darkToggle:checked) .contact-section {
+    background-color: var(--bg-primary);
+}
+
+body:has(#darkToggle:checked) .contact-section .text-danger {
+    color: var(--accent-color) !important;
+}
+
+
+body:has(#darkToggle:checked) .contact-section h6 {
+    color: var(--text-secondary) !important;
+}
+
+body:has(#darkToggle:checked) .contact-section p {
+    color: var(--text-primary) !important;
+}
+
+body:has(#darkToggle:checked) .info-box,
+body:has(#darkToggle:checked) .contact-form {
+    background-color: var(--bg-box);
+    color: var(--text-primary);
+}
+
+body:has(#darkToggle:checked) .contact-box {
+    background-color: var(--bg-box);
+}
+
+body:has(#darkToggle:checked) .contact-section button {
+    background-color: var(--accent-color) !important;
+    border-color: var(--accent-color) !important;
+    color: #000 !important;
+}
+
+body:has(#darkToggle:checked) .overlay-text {
+    color: var(--text-primary);
+}
+
+
+/* ================= FOOTER ================= */
+
+body:has(#darkToggle:checked) .footer {
+    color: var(--text-primary);
+}
+
+body:has(#darkToggle:checked) .footer button {
+    background-color: var(--accent-color) !important;
+    color: #000 !important;
+}
+
+body:has(#darkToggle:checked) .contact-icon {
+    color: var(--accent-color);
+}
+
+body:has(#darkToggle:checked) .red-circle {
+    background-color: var(--accent-color) !important;
+    color: #000 !important;
+}
